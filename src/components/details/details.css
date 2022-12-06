@@ -1,0 +1,10 @@
+.details-main{
+  width: 100%;
+}
+
+.fetch-item {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  min-height: 50px;
+  grid-gap: 26px;
+}

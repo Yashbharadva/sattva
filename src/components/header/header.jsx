@@ -102,80 +102,136 @@ function HeaderComponent() {
   }, []);
 
   return (
+    // <div>
+    //   <div className="main">
+
+    //     {/* <nav className={classes.nav}>
+    //       <div className={classes.container}>
+    //         <div className={classes.buttonMenu}>
+    //           <a className={classes.aTag}>Sattva Tech</a>
+    //         </div>
+    //         <div className={classes.menuItems}>
+    //           <ul className={classes.menu}>
+    //             <li><a>Home</a></li>
+    //             <li><a>About Us</a></li>
+    //             <li><a>Services</a></li>
+    //             <li><a>Contact Us</a></li>
+    //           </ul>
+    //         </div>
+    //       </div>
+    //     </nav> */}
+
+    //     {/* NAVIGATION BAR */}
+
+    //     <nav className={scrollHeader}>
+    //       <div className="container">
+    //         <div className="navbar-translate">
+    //           {/* <div className="navbar-brand">
+    //             Sattva
+    //           </div> */}
+    //         </div>
+    //         <div className="collapse">
+    //           <ul id="ceva" className="navbar-nav">
+    //             <li className="nav-item">
+    //               <div className="nav-link">
+    //                 <p>Home</p>
+    //               </div>
+    //             </li>
+    //             <li className="nav-item">
+    //               <div className="nav-link">
+    //                 <p>About Us</p>
+    //               </div>
+    //             </li>
+    //             <li className="nav-item">
+    //               <div className="nav-link">
+    //                 <p>Services</p>
+    //               </div>
+    //             </li>
+    //             <li className="dropdown nav-item">
+    //               <div className="nav-link">
+    //                 <p>Contact Us</p>
+    //               </div>
+    //             </li>
+    //           </ul>
+    //         </div>
+    //       </div>
+    //     </nav>
+
+    //     <div className="images-tag">
+    //       <div className="textCenter">
+    //         Sattva Tech
+    //       </div>
+    //       <div className="button-more">
+    //         Learn More
+    //       </div>
+    //     </div>
+
+    //   </div>
+    // </div>
+
     <div>
-      <div className="main">
+      <nav class="navbar-absolute navbar-transparent navbar navbar-expand-lg">
+        <div class={scrollHeader}>
+          {/* <div class="navbar-translate">
+            <a id="navbar-brand" class="navbar-brand" href="#/">Now Ui Kit PRO React</a>
+            <button aria-expanded="false" class="navbar-toggler">
+              <span class="navbar-toggler-bar top-bar"></span>
+              <span class="navbar-toggler-bar middle-bar"></span>
+              <span class="navbar-toggler-bar bottom-bar"></span>
+            </button>
+          </div> */}
+          <div class="collapse navbar-collapse">
+            <ul id="ceva" class="ml-auto navbar-nav">
+              <li class="dropdown nav-item">
+                <a href="#" id="navbarDropdownMenuLink1" class="nav-link">
+                  <p>Home</p>
+                </a>
+                {/* <div tabindex="-1" role="menu" aria-labelledby="navbarDropdownMenuLink1" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                  <a tabindex="0" role="menuitem" class="dropdown-item" href="#/">
+                    <i class="now-ui-icons design_image"></i>Presentation</a>
+                  <a tabindex="0" role="menuitem" class="dropdown-item" href="#/index">
+                    <i class="now-ui-icons business_chart-pie-36"></i>All components</a>
+                  <a tabindex="0" role="menuitem" class="dropdown-item" href="#/documentation/introduction">
+                    <i class="now-ui-icons design_bullet-list-67"></i>Documentation</a>
+                </div> */}
+              </li>
+              <li class="dropdown nav-item">
+                <a href="#" id="navbarDropdownMenuLink" class="nav-link">
+                  <p>About Us</p>
+                </a>
+              </li>
 
-        {/* <nav className={classes.nav}>
-          <div className={classes.container}>
-            <div className={classes.buttonMenu}>
-              <a className={classes.aTag}>Sattva Tech</a>
-            </div>
-            <div className={classes.menuItems}>
-              <ul className={classes.menu}>
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Services</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav> */}
+              <li class="dropdown nav-item">
+                <a href="#" id="navbarDropdownMenuLink" class="nav-link">
+                  <p>Services</p>
+                </a>
+              </li>
 
-        {/* NAVIGATION BAR */}
-
-        <nav className={scrollHeader}>
-          <div className="container">
-            <div className="navbar-translate">
-              {/* <div className="navbar-brand">
-                Sattva
-              </div> */}
-            </div>
-            <div className="collapse">
-              <ul id="ceva" className="navbar-nav">
-                <li className="nav-item">
-                  <div className="nav-link">
-                    <p>Home</p>
-                  </div>
-                </li>
-                <li className="nav-item">
-                  <div className="nav-link">
-                    <p>About Us</p>
-                  </div>
-                </li>
-                <li className="nav-item">
-                  <div className="nav-link">
-                    <p>Services</p>
-                  </div>
-                </li>
-                <li className="dropdown nav-item">
-                  <div className="nav-link">
-                    <p>Contact Us</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <div className="images-tag">
-          <div className="textCenter">
-            Sattva Tech
-          </div>
-          <div className="button-more">
-            Learn More
+              <li class="dropdown nav-item">
+                <a href="#" id="navbarDropdownMenuLink" class="nav-link">
+                  <p>Contact Us</p>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
 
-        <div class="u-container-layout">
-          <h2 class="u-custom-font">Welcome Message</h2>
-          <p class="u-text">Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus vestibulum sed arcu non. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Nec feugiat nisl pretium fusce id. Justo laoreet sit amet cursus sit amet. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero.</p>
-          <div class="u-expanded-height"></div>
-          <div class="u-expanded-height2"></div>
+      <div>
+        <div class="page-header page-header-small">
+          <div class="page-header-image" style={{ backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/004/204/495/large_2x/conceptual-workspace-laptop-computer-and-coffee-cup-note-book-with-white-flowers-placed-on-the-table-on-pastel-background-yellow-free-photo.jpg')`, backgroundAttachment: "fixed" }}></div>
+          <div class="content-center">
+            <div class="container">
+              <h1 class="title">Sattva Tech</h1>
+              <div class="text-center">
+                Learn More
+              </div>
+            </div>
+          </div>
         </div>
-
-
       </div>
     </div>
+
   )
 }
 
