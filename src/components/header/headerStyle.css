@@ -116,6 +116,24 @@ nav {
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
+
+.fixed-top {
+    box-shadow: none;
+    color: #fff;
+    background-color: #f1c50f;
+    position: fixed;
+    width: 100%;
+    z-index: 50000000000;
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.fixed-top2 {
+  box-shadow: none;
+  color: white;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+} 
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -123,6 +141,45 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f1c400;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 ul {
   margin-bottom: 1rem;
@@ -363,7 +420,6 @@ h6 {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  position: fixed;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -372,6 +428,14 @@ h6 {
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
+}
+
+.navigation {
+  background-color: yellow;
+}
+
+.text-color{
+  color: white;
 }
 .navbar-collapse {
   flex-basis: 100%;
@@ -419,9 +483,7 @@ h6 {
     flex-wrap: nowrap;
   }
   .navbar-expand-lg .navbar-collapse {
-    display: -webkit-flex !important;
     display: flex !important;
-    -webkit-flex-basis: auto;
     flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
@@ -713,6 +775,19 @@ p {
   box-shadow: none;
   color: #fff;
   padding-top: 20px !important;
+  /* background-color: transparent; */
+}
+
+.navbar-transparent{
+  background-color: transparent !important;
+  box-shadow: none;
+  color: white;
+}
+.navbar-absolute{
+  position: fixed;
+  width: 100%;
+  z-index: 1029;
+  background-color: #f1c400;
 }
 .navbar p {
   line-height: 1.8em;
@@ -720,11 +795,13 @@ p {
   font-weight: 400;
 }
 .navbar.navbar-absolute {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding-top: 10px;
   z-index: 1029;
+  /* background-color: #117a8b; */
 }
+
 .navbar .navbar-toggler {
   vertical-align: middle;
 }
@@ -1334,7 +1411,6 @@ h1 {
   outline: none;
 }
 .page-header.page-header-small {
-  min-height: 60vh;
   max-height: 640px;
 }
 

@@ -1,28 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./details.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import GRID_DATA from "../../gridData";
+import webLogo from "../../images/web-design-logo.png";
 
 function Details() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const [items] = useState(GRID_DATA);
 
   return (
-    <div>
+    <div style={{ padding: "5rem" }}>
       <div className="details-main">
-        {
-          items.map((item) => {
+        {items.map((item) => {
             return (
               <div>
                 <div className="fetch-item">
-                  <h2>{item.title}</h2>
-                  <div>
-                    </div>
-                  <h2>{item.description}</h2>
+                  <div className="collections" data-aos="fade-up">
+                    {/* <img className="web-logo" src={webLogo} /> */}
+                    <h2>{item.title}</h2>
+                    <span>{item.description}</span>
+                    <img src={item.imageUrl} />
+                  </div>
                 </div>
               </div>
             )
-          })
-        }
+          })}
       </div>
     </div>
   )
