@@ -3,7 +3,6 @@ import "./details.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GRID_DATA from "../../gridData";
-import webLogo from "../../images/web-design-logo.png";
 
 function Details() {
 
@@ -24,7 +23,7 @@ function Details() {
                     {/* <img className="web-logo" src={webLogo} /> */}
                     <h2>{item.title}</h2>
                     <span>{item.description}</span>
-                    <img src={item.imageUrl} />
+                    {/* <img src={item.imageUrl} /> */}
                   </div>
                 </div>
               </div>

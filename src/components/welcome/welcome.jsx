@@ -17,7 +17,6 @@ function WelcomeMessage() {
         <p class="u-text" data-aos="zoom-in">Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus vestibulum sed arcu non. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Nec feugiat nisl pretium fusce id. Justo laoreet sit amet cursus sit amet. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero.</p>
       </div>
         <div class="u-expanded-height2" data-aos="fade-left"></div>
-      
     </div>
   )
 }

@@ -31,13 +31,15 @@
   width: 700px;
   height: 15px;
   background-color: #f1c400;
-  margin: 50px 0px 0px;
+  margin: 50px 100px 0px;
+  left: 20;
 }
 
 .u-expanded-height2{
   width: 700px;
   height: 15px;
   background-color: #f1c400;
-  margin: 0px 0px 0px auto;
+  margin: 0px 100px 0px auto;
+  right: 20;
 }
 
