@@ -1,0 +1,39 @@
+.faq-text{
+    font-size: 3.75rem;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    list-icon-spacing: 0.3;
+    list-icon-size: 0.8;
+    font-family: Montserrat, sans-serif;
+}
+
+.main-faq {
+  padding: 0rem 10rem;
+}
+
+.faq-style {
+  /* border: 10px solid #f1c400; */
+  padding: 30px;
+  margin-bottom: 30px;
+
+}
+
+.data-style1{
+  width: 700px;
+  height: 15px;
+  background-color: #f1c400;
+  margin: 50px 0px 0px;
+  margin-bottom: 80px;
+  left: 20;
+}
+
+.data-style2{
+  width: 700px;
+  height: 15px;
+  background-color: #f1c400;
+  margin: 0px 0px 0px auto;
+  margin-top: 80px;
+  right: 20;
+}

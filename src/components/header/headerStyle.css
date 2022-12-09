@@ -1382,14 +1382,18 @@ h1 {
   color: #f1c400;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 .title{
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #fffae3 0%,
-    #fff4bf 29%,
-    #fee569 67%,
-    #fbda03 100%
+    #ffe77d 0%,
+    #ffe46d 29%,
+    #ffdb39 67%,
+    #f1c400 100%
   );
   background-size: auto auto;
   background-clip: border-box;

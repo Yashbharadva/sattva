@@ -88,7 +88,7 @@ function HeaderComponent() {
 
   const listenScrollEvent = e => {
     console.log(window.scrollY);
-    if (window.scrollY < 450) {
+    if (window.scrollY < 750) {
       return setHeader("navbar navbar-absolute navbar-transparent navbar-expand-lg");
     } else if (window.scrollY > 40) {
       return setHeader("navbar navbar-absolute navbar-expand-lg");
@@ -195,19 +195,19 @@ function HeaderComponent() {
                 </div> */}
               </li>
               <li className="dropdown nav-item">
-                <a href="#" id="navbarDropdownMenuLink" className="nav-link">
+                <a href="#about-us" id="navbarDropdownMenuLink" className="nav-link">
                   <p>About Us</p>
                 </a>
               </li>
 
               <li className="dropdown nav-item">
-                <a href="#" id="navbarDropdownMenuLink" className="nav-link">
+                <a href="#services" id="navbarDropdownMenuLink" className="nav-link">
                   <p>Services</p>
                 </a>
               </li>
 
               <li className="dropdown nav-item">
-                <a href="#" id="navbarDropdownMenuLink" className="nav-link">
+                <a href="#contact-us" id="navbarDropdownMenuLink" className="nav-link">
                   <p>Contact Us</p>
                 </a>
               </li>
@@ -218,7 +218,7 @@ function HeaderComponent() {
 
       <div>
         <div className="page-header page-header-small">
-          <div className="page-header-image" style={{ backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/004/204/495/large_2x/conceptual-workspace-laptop-computer-and-coffee-cup-note-book-with-white-flowers-placed-on-the-table-on-pastel-background-yellow-free-photo.jpg')`, backgroundAttachment: "fixed" }}></div>
+          <div className="page-header-image" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNhdHR2YSUyMHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60')`, backgroundAttachment: "fixed", objectFit: "cover" }}></div>
           <div className="content-center">
             <div className="container">
               <h1 className="title">Sattva Tech</h1>
